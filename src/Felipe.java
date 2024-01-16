@@ -1,39 +1,23 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Scanner;
 
 public class Felipe
 {
-    public static ArrayList<Tareas> ordenarTareas (ArrayList<Tareas> prioridad)
+    public static ArrayList<Tarea> ordenarTareas (ArrayList<Tarea> prioridad)
     {
         String res = "";
         Collections.sort(prioridad);
-        for (Tareas t : prioridad) {
+        for (Tarea t : prioridad) {
             res += t;
         }
         return prioridad;
     }
     public static void main(String[] args)
     {
-        ArrayList<Tareas> prioridades = new ArrayList<>();
-        Scanner escaner = new Scanner(System.in);
-
-        int priority;
-        int duration;
-
-        do
-        {
-            System.out.print("Introduce la prioridad: ");
-            priority = escaner.nextInt();
-            System.out.print("Introduce la duracion: ");
-            duration = escaner.nextInt();
-            if (priority != 0  || duration != 0)
-            {
-                prioridades.add(new Tareas(priority, duration));
-            }
-        }while (priority != 0 || duration != 0);
-
-        System.out.print(ordenarTareas(prioridades));
+        ArrayList<Tarea> tareas = new ArrayList<>();
+        tareas.add(new Tarea(30, 7));
+        tareas.add(new Tarea(30,2));
+        System.out.print(ordenarTareas(tareas));
     }
         /*public static ArrayList<Tareas> ordenarDuracion (ArrayList<Tareas> duracion)
     {
