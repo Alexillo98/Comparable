@@ -1,10 +1,10 @@
-public class Tareas implements Comparable<Tareas>
+public class Tarea implements Comparable<Tarea>
 {
     private int prioridad;
 
     private int duracion;
 
-    public Tareas (int prioridad, int duracion)
+    public Tarea (int prioridad, int duracion)
     {
         this.prioridad = prioridad;
         this.duracion = duracion;
@@ -18,7 +18,7 @@ public class Tareas implements Comparable<Tareas>
     {
         return this.prioridad + " -> " + this.duracion;
     }
-    public int compareTo (Tareas otro)
+    public int compareTo (Tarea otro)
     {
         if (this.prioridad == otro.prioridad)
         {
