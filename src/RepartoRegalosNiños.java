@@ -6,13 +6,19 @@ public class RepartoRegalosNiños
 {
     public static String repartos (List<Niño> buenosYpesos)
     {
-        String res = "";
+//        String res = "";
+//        Collections.sort(buenosYpesos);
+//        for (Niño nino: buenosYpesos
+//             ) {
+//            res += nino + "\n";
+//        }
         Collections.sort(buenosYpesos);
+        StringBuilder sb = new StringBuilder();
         for (Niño nino: buenosYpesos
              ) {
-            res += nino + "\n";
+            sb.append(nino).append("\n");
         }
-        return res;
+        return sb.toString();
     }
     public static void main(String[] args)
     {
