@@ -10,9 +10,9 @@ public class Tarea implements Comparable<Tarea>
         this.duracion = duracion;
     }
 
-    public int getTarea() {return this.prioridad;}
+    //public int getTarea() {return this.prioridad;}
 
-    public int getDuracion() {return this.duracion;}
+    //public int getDuracion() {return this.duracion;}
 
     public String toString ()
     {
